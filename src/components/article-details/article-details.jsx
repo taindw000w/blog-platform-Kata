@@ -6,14 +6,13 @@ import { Link, Redirect } from 'react-router-dom';
 import { NewArticle } from "../new-article/new-article";
 import { QuestionModal } from "../question-modal/question-modal";
 import Pop from "../../images/arrow.png";
-import { onEdited } from "../reducers/reducers";
+import { onEdited } from "../../reducers/reducers";
 import { favoriteArticle } from "../services/index";
 import { unfavoriteArticle } from "../services/index";
 import './article-details.scss'
 import axios from "axios";
 import { updateArticle } from "../services/index"
-import like from "../../images/Vector.svg";
-import avatar from "../../images/Rectangle.png";
+
 
 export const ArticleDetails = (props) => {
   const [post, setPost] = useState();
@@ -56,19 +55,6 @@ export const ArticleDetails = (props) => {
     return <Redirect to="/"/>
   }
 
-  const toogleLike = async (resultFavoritedBollean, token, slug) => {
-    // if (!resultFavoritedBollean) {
-    //   console.log(!resultFavoritedBollean);
-    //   const responseFavorited = await favoriteArticle(token, slug);
-    //   setResultFavoritedBollean(responseFavorited.article.favorited);
-    //   setCounter(responseFavorited.article.favoritesCount);
-    // } else {
-    //   console.log(resultFavoritedBollean);
-    //   const responseUnfavorited = await unfavoriteArticle(token, slug);
-    //   setResultFavoritedBollean(responseUnfavorited.article.favorited);
-    //   setCounter(responseUnfavorited.article.favoritesCount);
-    // }
-  };
 
   let articlePrevDataItem = null;
   let articleResultDataItem =
@@ -83,17 +69,11 @@ export const ArticleDetails = (props) => {
               {post.article.favoritesCount > 0 ? (
                 <button
                   className="article-vector-red"
-                  // onClick={() =>
-                  //   // toogleLike(resultFavoritedBollean, token, slug)
-                  // }
                   type="button"
                 ></button>
               ) : (
                 <button
                   className="article-vector"
-                  // onClick={() =>
-                  //   toogleLike(resultFavoritedBollean, token, slug)
-                  // }
                   type="button"
                 ></button>
               )}

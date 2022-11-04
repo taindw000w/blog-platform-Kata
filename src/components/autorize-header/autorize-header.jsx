@@ -1,7 +1,5 @@
 import { React, useState, useEffect} from 'react';
-import { useSelector, useStore } from "react-redux";
 import { Link } from "react-router-dom";
-import vector from "../../images/Rectangle.png"
 
 import "./autorize-header.scss";
 

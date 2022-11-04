@@ -5,8 +5,7 @@ import Vector from "../../images/Vector-point.svg";
 
 import { deleteArticle } from "../services/index"
 
-
-export const QuestionModal = ({questionDelete, setQuestionDelete, setDeleted, slug, token}) => {
+export const QuestionModal = ({setQuestionDelete, setDeleted, slug, token}) => {
 
   const onDeletePost = async (token, slug) => {
     try {

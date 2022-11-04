@@ -2,7 +2,7 @@ import { React } from 'react';
 import { useDispatch} from 'react-redux';
 import { useForm } from 'react-hook-form';
 import { updateUser } from "../services/index";
-import { editeUser } from "../reducers/reducers";
+import { editeUser } from "../../reducers/reducers";
 import './profile.scss';
 
 export const Profile = () => {

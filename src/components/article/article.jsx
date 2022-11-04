@@ -1,16 +1,12 @@
-import {React, useState, useEffect} from 'react';
-import { useSelector } from "react-redux";
-import avatar from '../../images/Rectangle.png';
+import {React, useState} from 'react';
 import { favoriteArticle } from '../services/index';
 import { unfavoriteArticle } from '../services/index';
-import { postApi } from "../services/index";
 import { Link } from 'react-router-dom';
 import { format } from "date-fns";
 import './article.scss';
 
 export const Article = (props) => {
   const { body, date, description, favorited, favoritesCount, slug, title, tagList } = props;
-  const [slugg, setSlug] = useState(slug);
   const [token, setToken] = useState(localStorage.getItem("token"));
   const [resultFavorited, setResultFavorited] = useState(favorited);
   const [counter, setCounter] = useState(favoritesCount)

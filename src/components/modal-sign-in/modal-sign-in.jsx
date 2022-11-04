@@ -5,8 +5,8 @@ import { FormField} from "../form-field/form-field";
 import { FormFieldError } from "../form-field-error/form-field-error"
 import { Link, Redirect } from "react-router-dom";
 import { signIn, authorizeUser } from '../services/index'
-import { online } from '../reducers/reducers';
-import { addUser } from "../reducers/reducers";
+import { online } from '../../reducers/reducers';
+import { addUser } from "../../reducers/reducers";
 
 import "./modal-sign-in.scss";
 

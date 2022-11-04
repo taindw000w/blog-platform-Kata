@@ -3,9 +3,8 @@ import { useDispatch } from 'react-redux';
 import { useForm } from 'react-hook-form';
 import { Redirect } from 'react-router-dom'
 import { createPost } from "../services/index";
-import { createArticle } from "../reducers/reducers"
+import { createArticle } from "../../reducers/reducers"
 import { updateArticle } from "../services/index";
-
 
 import axios from "axios";
 
@@ -102,9 +101,6 @@ export const NewArticle = ({ match }) => {
             })}
             defaultValue={(slug) ? title : null}
           />
-          {/* {errors.title?.type === "required" && (
-            <span className="error">{"Title is required"}</span>
-          )} */}
         </label>
         <label className="label">
           <span className="article-creator-form__title">Short description</span>
@@ -118,9 +114,6 @@ export const NewArticle = ({ match }) => {
             name="description"
             defaultValue={slug ? description : null}
           />
-          {/* {errors.description?.type === "required" && (
-            <span className="error">{"Short decription is required"}</span>
-          )} */}
         </label>
         <label className="label">
           <span className="article-creator-form__title">Text</span>
@@ -136,9 +129,6 @@ export const NewArticle = ({ match }) => {
             name="body"
             defaultValue={slug ? body : null}
           />
-          {/* {errors.body?.type === "required" && (
-            <span className="error">{"Text is required"}</span>
-          )} */}
         </label>
         <label className="label-tags">
           <span className="article-creator-form__title">Tags</span>

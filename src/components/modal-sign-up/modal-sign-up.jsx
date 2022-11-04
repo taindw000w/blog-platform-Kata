@@ -3,9 +3,9 @@ import { useDispatch} from 'react-redux';
 import { FormField } from "../form-field/form-field";
 import { FormFieldError } from "../form-field-error/form-field-error";
 import { useForm } from 'react-hook-form';
-import { addUser } from '../reducers/reducers'
+import { addUser } from '../../reducers/reducers'
 import { Link, Redirect } from 'react-router-dom';
-import { online } from '../reducers/reducers';
+import { online } from '../../reducers/reducers';
 
 import styles from './modal-sign-up.module.scss';
 import { signUp } from "../services/index";
