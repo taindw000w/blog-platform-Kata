@@ -1,4 +1,4 @@
-import {React, useState} from "react";
+import {React, useState} from "react"; 
 import { useDispatch } from "react-redux";
 import { useForm } from "react-hook-form";
 import { FormField} from "../form-field/form-field";
@@ -37,7 +37,7 @@ export const SignIn = () => {
       dispatch(online(true));
       localStorage.setItem('status', true)
     } catch (err) {
-      setError("email or password is invalid");
+      setError("email or password is invalid")
     }
   }
 

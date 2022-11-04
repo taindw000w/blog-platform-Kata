@@ -1,5 +1,7 @@
 import { React, useState, useEffect} from 'react';
+import { useSelector, useStore } from "react-redux";
 import { Link } from "react-router-dom";
+import vector from "../../images/Rectangle.png"
 
 import "./autorize-header.scss";
 
@@ -21,7 +23,7 @@ export const AutorizeHeader = (props) => {
             <span className="login-username">{name}</span>
             <img
               className="login-username-avatar"
-              src={avatar || "https://static.productionready.io/images/smiley-cyrus.jpg"}
+              src={"https://static.productionready.io/images/smiley-cyrus.jpg"}
               alt=""
             ></img>
           </div>

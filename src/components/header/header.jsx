@@ -1,6 +1,6 @@
 import { React, useState, useEffect } from 'react';
-import { Link} from 'react-router-dom';
-import { useDispatch } from "react-redux";
+import { Link, Redirect } from 'react-router-dom';
+import { useSelector, useStore, useDispatch } from "react-redux";
 import { online } from "../../reducers/reducers";
 import { AutorizeHeader } from '../autorize-header/autorize-header';
 
@@ -8,7 +8,12 @@ import './header.scss';
 
 export const Header = () => {
   const [isSignUp, setIsSignUp] = useState(false);
+  const [profileStatus, setProfileStatus] = useState(false);
+  const [createArticleStatus, setCreateArticleStatus] = useState(false);
+
+  const onlineState = useSelector((state) => state.booleanLogin);
   const dispatch = useDispatch();
+ 
   const user = localStorage.getItem('username');
 
   useEffect(() => {
