@@ -1,0 +1,23 @@
+// .aticle-list {
+//   position: relative;
+// }
+
+.wrapper-articles-block {
+  padding-bottom: 20px;
+}
+
+.oval-wrapper {
+  position: relative;
+  width: 2px;
+  height: 160px;
+  left: 46%;
+
+}
+
+[data-testid="oval-loading"] {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+}

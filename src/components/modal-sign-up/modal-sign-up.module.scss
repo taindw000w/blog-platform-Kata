@@ -1,0 +1,149 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .modal-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #262626;
+
+  }
+
+  .modal-wrapper-sign-up {
+    display: flex;
+    gap: 21px;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 43px;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    box-shadow: 0px 22px 106px rgba(0, 0, 0, 0.07), 0px 9.19107px 44.2843px rgba(0, 0, 0, 0.0503198), 0px 4.91399px 23.6765px rgba(0, 0, 0, 0.0417275), 0px 2.75474px 13.2728px rgba(0, 0, 0, 0.035), 0px 1.46302px 7.04911px rgba(0, 0, 0, 0.0282725), 0px 0.608796px 2.93329px rgba(0, 0, 0, 0.0196802);
+    border-radius: 6px;
+  }
+
+  .label-checkbox-sign-up__autentify {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top: 1px solid #E8E8E8;
+    padding-top: 13px;
+    max-width: 320px;
+
+    .custom-checkbox {
+      width: 18px;
+      height: 18px;
+      margin-right: 7px;
+    }
+
+    .checkbox-text {
+      display: inline-block;
+      width: 309px;
+    }
+  }
+}
+
+
+label {
+  display: flex;
+  flex-direction: column;
+
+  input {
+    width: 320px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+    outline: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.username {
+  display: block;
+  margin: 0 0 6px 0;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+}
+
+.button-create-user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 4px;
+  justify-content: center;
+  width: 319px;
+  height: 40px;
+  background: #1890FF;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: 0.2s;
+  border: none;
+  color: #ffffffe1;
+  cursor: pointer;
+}
+
+.button-create-user:hover {
+  color: #ffffff;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-username,
+.input-email,
+.input-password {
+  width: 320px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #D9D9D9;
+  outline: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.error {
+  color: rgb(182, 65, 65);
+  display: inline-block;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.error-border {
+  width: 320px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #D9D9D9;
+  outline: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid rgb(182, 65, 65);
+}
+
+.error {
+  color: #F5222D;
+}

@@ -1,0 +1,66 @@
+.article-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.button-delete {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  color: #F5222D;
+  border: 1px solid #F5222D;
+  border-radius: 5px;
+  padding: 6px 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-right: 12px;
+}
+
+.button-delete:hover {
+  color: #FFFFFF;
+  background-color: #F5222D;
+}
+
+
+.button-edit {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  color: #52C41A;
+  border: 1px solid #52C41A;
+  border-radius: 5px;
+  padding: 6px 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.date {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+
+.button-edit:hover {
+  color: #FFFFFF;
+  background-color: #52C41A;
+}

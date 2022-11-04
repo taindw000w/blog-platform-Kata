@@ -1,0 +1,151 @@
+.article-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  list-style-type: none;
+}
+
+.article-vector {
+  cursor: pointer;
+  background-image: url(../../images/Vector.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  background-color: transparent;
+  background-position: center;
+  width: 15px;
+  height: 15px;
+
+}
+
+.article-vector-red {
+  cursor: pointer;
+  background-image: url(../../images/path4.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  background-color: transparent;
+  background-position: center;
+  width: 15px;
+  height: 15px;
+}
+
+
+
+.article-outer {
+  display: flex;
+  justify-content: space-between;
+  width: 941px;
+  min-height: 200px;
+  max-width: 100%;
+  background: #FFFFFF;
+  border-radius: 5px;
+  padding: 15px 16px;
+  filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.15));
+}
+
+.article-wrapper {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.article-wrapper-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+}
+
+.article-vector-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 30px;
+}
+
+.date {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.article-user {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.article-tags {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 2px 5px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+
+.article-avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  margin-left: 10px;
+  background-image: url("../../images/Rectangle.png");
+}
+
+.article-decription {
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.article-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.article-link {
+  display: inline-block;
+  margin-right: 15px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.username {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.article-likes {
+  color: black;
+}
+
+.article-blocked {
+  cursor: not-allowed;
+}
+
+.article-title-bloc {
+  margin-bottom: 10px;
+}

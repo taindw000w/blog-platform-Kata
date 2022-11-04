@@ -1,0 +1,88 @@
+.header {
+  background-color: #FFFFFF;
+  height: 80px;
+  padding: 0 22px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 26px;
+
+  .wrapper-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.85);
+    margin: 0;
+  }
+
+
+}
+
+.autorize {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+
+  .autorize-sign-in {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.85);
+    margin: 19px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 80px;
+    text-decoration: none;
+  }
+
+  .autorize-sign-up {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    border: 1px solid #52C41A;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    color: #52C41A;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 50px;
+    text-decoration: none;
+  }
+
+  .autorize-sign-in:hover {
+    border-radius: 5px;
+    color: white;
+    background-color: #525252;
+  }
+
+  .autorize-sign-up:hover {
+    color: white;
+    background-color: #52C41A;
+  }
+}

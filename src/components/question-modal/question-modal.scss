@@ -1,0 +1,73 @@
+.question-delete {
+  position: relative;
+  filter: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.15));
+}
+
+.arrow-delete-modal {
+  position: absolute;
+  left: -16px;
+  top: 10px;
+  filter: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.15));
+}
+
+.modal-question {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  top: -30px;
+  left: -12px;
+  background-color: #fff;
+  filter: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.15));
+  width: 300px;
+  border-radius: 4px;
+
+  padding: 25px 16px;
+  height: 150px;
+
+  .point {
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+  }
+
+  .buttons-questions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 40px;
+
+    .btns {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+    }
+  }
+
+  .no-btn {
+    background-color: #fff;
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+    transition: 0.2s;
+    padding: 2px 8px;
+    cursor: pointer;
+  }
+
+  .no-btn:hover {
+    background: #1890FF;
+    border: 1px solid #1890FF;
+  }
+
+  .yes-btn {
+    background-color: #fff;
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+    transition: 0.2s;
+    padding: 2px 8px;
+    cursor: pointer;
+  }
+
+  .yes-btn:hover {
+    background: #1890FF;
+    border: 1px solid #1890FF;
+  }
+}

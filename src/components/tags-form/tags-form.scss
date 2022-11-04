@@ -1,0 +1,17 @@
+.item {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin-bottom: 8px;
+
+  .article-creator-form__input-item {
+    width: 300px;
+    padding: 8px 12px;
+    margin-right: 20px;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+    outline: none;
+    color: #BFBFBF;
+  }
+}
